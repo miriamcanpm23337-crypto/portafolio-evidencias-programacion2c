@@ -1,18 +1,19 @@
-#trabajo en la organizacion de un evento de premio, tienes una lista de celebridades
-# que entraram por la alfombra roja. el orden es vital. 1 crea una lista llamada invitados con los nombres 
+#Trabajas en la organización de un evento de premios.
+# Tienes una lista de celebridades que entrarán por la alfombra roja.
 
+# 1. Crea una lista llamada invitados con los nombres:
+# "Robert Downey Jr.", "Emma Stone", "Cillian Murphy".
+invitados = ["Robert Downey Jr.", "Emma Stone", "Cillian Murphy"]
 
+# 2. Llega de último minuto. Agrega a "Zendaya" al final de la lista.
+invitados.append("Zendaya")
 
-# punto no.1
-invitados = ["Robert Dawny jr","Emma stone","Cilliam Murphy"]
-#punto no.2 
-invitados. append ("Zendaya")
-#punto no.3
-invitados. inter(0,"Steven Spielberg")
-#punto no.4 
-#invitados. pop (2)
-invitados. renove("Emma Stone")
-#punto no.5
-invitados.pop (3) #invitados .pop() 1 del invitados (-1)
-#punto no.6
-print(invitados,"no,total de invitados:",len(invitados))
+# 3. Invitado VIP: "Steven Spielberg" debe ir al principio.
+invitados.insert(0, "Steven Spielberg")
+
+# 4. Cancelación: "Emma Stone" no asistirá.
+invitados.remove("Emma Stone")
+
+# 5. Imprime la lista final y cuántos quedan en total.
+print("Lista final de invitados:", invitados)
+print("Total de invitados:", len(invitados))
