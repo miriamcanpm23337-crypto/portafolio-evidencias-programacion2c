@@ -3,7 +3,7 @@ class Cuenta:
     Gestiona la información basica de una cuenta bancaria, asi como, los movimientos de la cuenta (depósitos y retiros)
     validando la información de la cuenta e integridad del saldo.
     
-    Attributes:
+    Attributes: 
         cliente (str): Nombre del cliente de la cuenta.
         cuenta (str): Numero de 10 digitos asignado a la cuenta.
         saldo (float): Saldo actual de la cuenta.
@@ -12,7 +12,7 @@ class Cuenta:
         """
         Inicializa una nueva cuenta bancaria.
         
-        Args:
+        Args: 
             cliente (str): Nombre del cliente de la cuenta.
             cuenta (str): Numero de 10 digitos asignado a la cuenta.
             saldo (float): Saldo de la cuenta.
@@ -25,8 +25,8 @@ class Cuenta:
         """
         Deposita la cantidad deseada a la cuenta, validando que la cantidad sea mayor a 0
         
-        Args:
-            cantidad (float): Valor numerico flotante de la cantidad a depositar a la cuenta.
+        Args: 
+        cantidad (float): Valor numerico flotante de la cantidad a depositar a la cuenta.
             
         Returns:
             (bool): True si el deposito fue exitoso.
@@ -41,7 +41,7 @@ class Cuenta:
         """
         Retira una cantidad mayor a 0 y menor o igual al saldo de la cuenta.
         
-        Args:
+        Args: 
             cantidad (float): Valor numerico flotante de la cantidad a retirar a la cuenta.
             
         Returns:
